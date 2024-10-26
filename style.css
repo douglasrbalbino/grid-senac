@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+/*-- header e navbar --*/
+header {
+    background-color: lightblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.navbar {
+    grid-column: 2 / 10;
+    display: flex;
+    align-items: center;
+    height: 68px;
+}
+
+.top-nav {
+    grid-column: 2 / 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: lightyellow;
+}
+
+/*-- Main --*/
+
+/*-- Hero Section --*/
+.hero-section {
+    grid-column: 2 / 10;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    height: 557px;
+}
+
+.hero-top {
+    grid-row: span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.hero-bottom {
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero-bottom input {
+    width: 670px;
+    height:64px ;
+}
+
+/*-- Courses Section --*/
+.course-painel {
+    grid-column: 2 / 10;
+    grid-row: 2 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 278px;
+}
+
+.course-painel h2 {
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 948px;
+    background-color: lightgreen;
+    
+}
+
+.course-list li {
+    padding: 7px 15px;
+    border: 1px solid black;
+}
+
+/*-- Quick Acess Section --*/
+.quick-acess {
+    grid-column: 2 / 10;
+    grid-row: 3 / 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: lightgray;
+}
+
+.list-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.acess-card {
+    width: 192px;
+    height: 179px;
+
+    background-color: lightgoldenrodyellow;
+}
+
+i .fa-solid .fa-handshake {
+    height: 100px;
+}
